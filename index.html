@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+        }
+
+        .right {
+            margin-left: 150px;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+
+        }
+    </style>
 </head>
+
 <body>
-     <div style="text-align: center;">
-        <h1>Efficient HVAC</h1>
-        <h1>Solution</h1>
-        <img src="./download.jpg" alt="pic">
-<p>A leading HVAC construction company known for</p>
-<p>advance technology and energy efficiency in </p>
-<p>cooling and heating system.We priotrize client</p>
-<p>comfort while cutting down or utility cost.</p>
-<button style="border: 1; border-radius: 8px; padding: 20px; margin: 10px;">Contact</button>
+    <div class="main">
+        <p>OUR SERVICES</p>
+        <h1>We Can Help You With This Situation</h1>
+    </div>
+    <div id="hero">
+        <div class="left">
+            <ul>
+            <select id="service" name="service" required> <option value="" disabled selected>Select a service</option>
+                 <option>Relation Problem</option>
+                  <option>Couples Counseling</option> 
+                  <option>Depression Treatment</option> 
+                  <option>Family Problem</option> 
+                  <option>Personal Problem</option>
+                   <option>Business Problem</option> 
+            </select></ul>
+        </div>
+        <div class="right">
+            <img src="./wife-comforting-perturbed-husband-wyhf4nbiky5by5dy.jpg" alt="">
+            <h2>Relative Problem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi autem doloribus blanditiis eos
+                repudiandae voluptatem veniam velit, obcaecati impedit. Consectetur voluptate nisi, eum eos officia
+                maxime iste expedita ab optio.</p>
+        </div>
     </div>
 </body>
+
 </html>
