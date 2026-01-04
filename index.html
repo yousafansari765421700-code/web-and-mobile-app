@@ -6,57 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main {
-            text-align: center;
+        form {
+            display: grid;
         }
 
-        ul {
-            display: flex;
-            flex-direction: column;
+        h1 {
+            display: grid;
+            justify-content: center;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas: form img
+                button;
+
         }
 
         img {
-            width: 400px;
-            height: 200px;
+            width: 500px;
+            height: 500px;
         }
 
-        .right {
-            margin-left: 150px;
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
         }
 
-        #hero {
-            display: flex;
-            justify-content: center;
-            padding: 50px;
+        #fname {
+            align-self: center;
+        }
+
+        label {
+            padding: 10px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #Message {
+            width: 100%;
+            height: 100px;
+            margin-top: 0%;
 
         }
+
+      
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <p>OUR SERVICES</p>
-        <h1>We Can Help You With This Situation</h1>
-    </div>
-    <div id="hero">
+    <h1>Contrat Forms #08</h1>
+    <div class="container">
         <div class="left">
-            <ul>
-            <select id="service" name="service" required> <option value="" disabled selected>Select a service</option>
-                 <option>Relation Problem</option>
-                  <option>Couples Counseling</option> 
-                  <option>Depression Treatment</option> 
-                  <option>Family Problem</option> 
-                  <option>Personal Problem</option>
-                   <option>Business Problem</option> 
-            </select></ul>
+            <h2>Get in touch with us</h2>
+           
+              
+            <form>
+                <label for="fname">FULL NAME</label>
+                <input type="text" id="fname" name="firstname" placeholder="Name">
+                <label for="Email">EMAIL</label>
+                <input type="text" name="Email" id="Email" placeholder="Email">
+                <label for="subject">SUBJECT</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <label for="MESSAGE">MESSAGE</label>
+                <input type="text" name="Message" id="Message" placeholder="Message">
+            </form>
+            <button>Send Message</button>
         </div>
         <div class="right">
-            <img src="./wife-comforting-perturbed-husband-wyhf4nbiky5by5dy.jpg" alt="">
-            <h2>Relative Problem</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi autem doloribus blanditiis eos
-                repudiandae voluptatem veniam velit, obcaecati impedit. Consectetur voluptate nisi, eum eos officia
-                maxime iste expedita ab optio.</p>
+            <img src="./28480887_Tiny programmers on big laptop writing script.jpg" alt="laptop">
         </div>
+
     </div>
 </body>
 
