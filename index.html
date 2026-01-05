@@ -64,7 +64,12 @@
             margin-top: 0%;
 
         }
+.main{
+    display: flex;
+    gap: 35px;
 
+}
+   
       
     </style>
 </head>
@@ -74,13 +79,14 @@
     <div class="container">
         <div class="left">
             <h2>Get in touch with us</h2>
-           
+            <div class="main">
+            <div><label for="fname">FULL NAME</label>
+                <input type="text" id="fname" name="firstname" placeholder="Name"></div>
+            <div><label for="Email">EMAIL</label>
+                <input type="text" name="Email" id="Email" placeholder="Email"></div>
+           </div>
               
             <form>
-                <label for="fname">FULL NAME</label>
-                <input type="text" id="fname" name="firstname" placeholder="Name">
-                <label for="Email">EMAIL</label>
-                <input type="text" name="Email" id="Email" placeholder="Email">
                 <label for="subject">SUBJECT</label>
                 <input type="text" name="subject" id="subject" placeholder="Subject">
                 <label for="MESSAGE">MESSAGE</label>
@@ -94,5 +100,6 @@
 
     </div>
 </body>
+
 
 </html>
