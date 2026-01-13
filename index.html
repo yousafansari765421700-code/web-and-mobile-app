@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        form {
-            display: grid;
-        }
+  <meta charset="UTF-8">
+  <title>Trading Platform Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        h1 {
-            display: grid;
-            justify-content: center;
-        }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: cornflowerblue;
+      color: white;
+    }
 
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-areas: form img
-                button;
+    header {
+      padding: 20px;
+      text-align: center;
+    }
 
-        }
+    header h1 {
+      font-size: 2.5em;
+      color: white;
+    }
 
-        img {
-            width: 500px;
-            height: 500px;
-        }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-        button {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 10px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
+    .hero h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
 
-        #fname {
-            align-self: center;
-        }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
 
-        label {
-            padding: 10px;
-        }
+    .hero button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 25px;
+      cursor: pointer;
+    }
 
-        input[type=text] {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        #Message {
-            width: 100%;
-            height: 100px;
-            margin-top: 0%;
-
-        }
-.main{
-    display: flex;
-    gap: 35px;
-
-}
-   
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
       
-    </style>
+    }
+
+    .feature-box {
+      width: 45%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .feature-box h3 {
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 1em;
+      color: #000;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Contrat Forms #08</h1>
-    <div class="container">
-        <div class="left">
-            <h2>Get in touch with us</h2>
-            <div class="main">
-            <div><label for="fname">FULL NAME</label>
-                <input type="text" id="fname" name="firstname" placeholder="Name"></div>
-            <div><label for="Email">EMAIL</label>
-                <input type="text" name="Email" id="Email" placeholder="Email"></div>
-           </div>
-              
-            <form>
-                <label for="subject">SUBJECT</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject">
-                <label for="MESSAGE">MESSAGE</label>
-                <input type="text" name="Message" id="Message" placeholder="Message">
-            </form>
-            <button>Send Message</button>
-        </div>
-        <div class="right">
-            <img src="./28480887_Tiny programmers on big laptop writing script.jpg" alt="laptop">
-        </div>
 
+  <header>
+    <h1>Rule The Exchange</h1>
+  </header>
+
+  
+  <section class="features">
+    <div class="feature-box">
+      <h3>📚 Knowledge Base</h3>
+      <p>Sharpen up your trading know-how with our comprehensive tutorials and guides.</p>
     </div>
+    <div class="feature-box">
+      <h3>🕒 24/7 Support</h3>
+      <p>We're here for you anytime via live chat and help desk.</p>
+    </div>
+  </section>
+<section class="hero">
+    <h3>You'll wonder how you ever <br> lived without us</h3>
+    <button>Get Started for Free</button>
+  </section>
+
+  
+
 </body>
-
-
 </html>
