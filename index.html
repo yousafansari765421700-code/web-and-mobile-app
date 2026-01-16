@@ -2,133 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trading Platform Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Program</title>
   <style>
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: cornflowerblue;
-     
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .main {
-    background-color: white;
-    padding: 200px;
-    width: 600px;
-    height: 100px;
-    margin-top: 200px;
-    margin-left: -450px;
-}
 
-.main2 {
-    background-color: white;
-    margin-top: -500px;
-    margin-left: 800px;
-    padding: 200px;
-    width: 600px;
-    height: 100px;
+  
+    header {
+      height: 60px;
+      background: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    
+    main {
+      height: calc(100vh - 60px);
+      display: flex; 
+    }
 
-}
+    
+    nav {
+      width: 200px;
+      background: #35adfd;
+      color: white;
+      padding: 20px;
+    }
 
-#heading {
-    margin-top: -250px;
-    margin-left: 300px;
-    font-size: 38px;
-}
+    
+    section {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
 
-#para {
-    margin-left: 300px;
-    font-size: 20px;
-}
+    .box {
+        position: relative;
+      background: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border-radius: 8px;
+      animation: pulse 3s infinite;
+      cursor: pointer;
+       overflow: hidden;
+       text-align: center;
+    }      
 
-#heading1 {
-    margin-top: -250px;
-    margin-left: 300px;
-    font-size: 38px;
-}
+    /* Keyframes animation */
+    @keyframes pulse {
+      0%   { transform: scale(1); background: lightblue; }
+      50%  { transform: scale(1.1); background: lightblue; }
+      100% { transform: scale(1); background: lightblue; }
+    }
+    .rotate {
+      animation: spin 5s linear infinite;
+    }
 
-#para1 {
-    margin-left: 300px;
-    font-size: 19px;
-}
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
 
-#head1 {
-    text-align: center;
-    color: white;
-    margin-top: -500px;
-    font-size: 100px;
-    margin-right: 350px;
-}
+    @media (max-width: 768px) {
+     
+      section {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        width: 150px;
+      }
+    }
 
-#head2 {
-    text-align: center;
-    color: white;
-    margin-top: 200px;
-    margin-right: 350px;
-    font-size: 70px;
-}
-
-button {
-    padding: 50px;
-    border-radius: 70px;
-    border: none;
-    width: 500px;
-    background-color: rgb(97, 216, 97);
-    color: white;
-    font-size: 40px;
-    margin-left: 500px;
-}
-
-#container {
-    position: absolute;
-    z-index: 200;
-    margin-left: 650px;
-    margin-top: 650px;
-}
-
-#img {
-    position: relative;
-    z-index: 40;
-}
-
-#img2 {
-    margin-top: -130px;
-    margin-left: -50px;
-    width: 300px;
-    height: 300px;
-}
-
-#img3 {
-    margin-top: -130px;
-    margin-left: -50px;
-    width: 300px;
-    height: 300px;
-}
-
+    @media (max-width: 480px) {
+     
+      main {
+        flex-direction: column;
+      }
+      nav {
+        width: 100%;
+        text-align: center;
+      }
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-<div id="container">
-        <h1 id="head1">Rule The Exchange</h1>
-        <div class="main">
-            <img id="img2" src="../class no 14/book_2232688.png" >
-            <h3 id="heading">Knowledge Base</h3>
-            <p id="para">Sharpen up your trading know-how with our comprehensive Knowledge  Base
-                containing helpful
-                instructions  and tutorials.</p>
-        </div>
-        <div class="main2">
-            <img id="img3"
-                src="https://static.vecteezy.com/system/resources/thumbnails/072/950/843/small/3d-chat-icon-speech-bubbles-with-question-mark-and-dots-isolated-on-transparent-background-free-png.png">
-            <h3 id="heading1">24/7 Support</h3>
-            <p id="para1">We're here for you when you need us with 24/7 Support via both live chat and
-                help desk.
-            </p>
-        </div>
-        <h1 id="head2">You'll wonder how you ever <br> lived without us</h1>
-        <button>Get Started for Free</button>
+  <header>
+    <h1>CSS Program</h1>
+  </header>
+  <main>
+    <nav>
+      <p>Sidebar Menu</p>
+    </nav>
+    <section>
+      <div class="box">
+       <h3> Box 1</h3>
     </div>
-    <img id="img" src="./background.jpg" alt="">
-
+    <div class="box rotate">
+        <h3>Box 2 (Rotate)</h3>
+    </div>
+      <div class="box"> 
+        <h3>Box 3</h3>
+    </div>
+      <div class="box">
+        <h3>Box 4</h3>
+    </div>
+    </section>
+  </main>
 </body>
 </html>
