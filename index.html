@@ -4,109 +4,131 @@
   <meta charset="UTF-8">
   <title>Trading Platform Landing Page</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: cornflowerblue;
-      color: white;
+     
     }
+    .main {
+    background-color: white;
+    padding: 200px;
+    width: 600px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: -450px;
+}
 
-    header {
-      padding: 20px;
-      text-align: center;
-    }
+.main2 {
+    background-color: white;
+    margin-top: -500px;
+    margin-left: 800px;
+    padding: 200px;
+    width: 600px;
+    height: 100px;
 
-    header h1 {
-      font-size: 2.5em;
-      color: white;
-    }
 
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-    }
+}
 
-    .hero h3 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
+#heading {
+    margin-top: -250px;
+    margin-left: 300px;
+    font-size: 38px;
+}
 
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
+#para {
+    margin-left: 300px;
+    font-size: 20px;
+}
 
-    .hero button {
-      background-color: green;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1em;
-      border-radius: 25px;
-      cursor: pointer;
-    }
+#heading1 {
+    margin-top: -250px;
+    margin-left: 300px;
+    font-size: 38px;
+}
 
-    .features {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px 20px;
-      
-    }
+#para1 {
+    margin-left: 300px;
+    font-size: 19px;
+}
 
-    .feature-box {
-      width: 45%;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-    }
+#head1 {
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    font-size: 100px;
+    margin-right: 350px;
+}
 
-    .feature-box h3 {
-      color: black;
-      margin-bottom: 10px;
-    }
+#head2 {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    margin-right: 350px;
+    font-size: 70px;
+}
 
-    .feature-box p {
-      font-size: 1em;
-      color: #000;
-    }
+button {
+    padding: 50px;
+    border-radius: 70px;
+    border: none;
+    width: 500px;
+    background-color: rgb(97, 216, 97);
+    color: white;
+    font-size: 40px;
+    margin-left: 500px;
+}
 
-    footer {
-      background-color: #1c1c1c;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
+#container {
+    position: absolute;
+    z-index: 200;
+    margin-left: 650px;
+    margin-top: 650px;
+}
+
+#img {
+    position: relative;
+    z-index: 40;
+}
+
+#img2 {
+    margin-top: -130px;
+    margin-left: -50px;
+    width: 300px;
+    height: 300px;
+}
+
+#img3 {
+    margin-top: -130px;
+    margin-left: -50px;
+    width: 300px;
+    height: 300px;
+}
+
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Rule The Exchange</h1>
-  </header>
-
-  
-  <section class="features">
-    <div class="feature-box">
-      <h3>📚 Knowledge Base</h3>
-      <p>Sharpen up your trading know-how with our comprehensive tutorials and guides.</p>
+<div id="container">
+        <h1 id="head1">Rule The Exchange</h1>
+        <div class="main">
+            <img id="img2" src="../class no 14/book_2232688.png" >
+            <h3 id="heading">Knowledge Base</h3>
+            <p id="para">Sharpen up your trading know-how with our comprehensive Knowledge  Base
+                containing helpful
+                instructions  and tutorials.</p>
+        </div>
+        <div class="main2">
+            <img id="img3"
+                src="https://static.vecteezy.com/system/resources/thumbnails/072/950/843/small/3d-chat-icon-speech-bubbles-with-question-mark-and-dots-isolated-on-transparent-background-free-png.png">
+            <h3 id="heading1">24/7 Support</h3>
+            <p id="para1">We're here for you when you need us with 24/7 Support via both live chat and
+                help desk.
+            </p>
+        </div>
+        <h1 id="head2">You'll wonder how you ever <br> lived without us</h1>
+        <button>Get Started for Free</button>
     </div>
-    <div class="feature-box">
-      <h3>🕒 24/7 Support</h3>
-      <p>We're here for you anytime via live chat and help desk.</p>
-    </div>
-  </section>
-<section class="hero">
-    <h3>You'll wonder how you ever <br> lived without us</h3>
-    <button>Get Started for Free</button>
-  </section>
-
-  
+    <img id="img" src="./background.jpg" alt="">
 
 </body>
 </html>
